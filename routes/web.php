@@ -15,16 +15,23 @@ use App\Http\Controllers\Backend\DashboardController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/index', function () {
+    return view('frontend.layouts.index');
 });
-
 Route::get('/', function () {
     return view('frontend.layouts.index');
 });
 
+Route::get('/userlogin', function () {
+    return view('frontend.layouts.index');
+});
+
+Route::get('/adminlogin', function () {
+    return view('auth.login')->name("adminlogin");
+});
+
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    return view('backend.dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {

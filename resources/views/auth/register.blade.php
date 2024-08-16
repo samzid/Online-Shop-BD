@@ -9,14 +9,14 @@
             <x-input-error :messages="$errors->get('name')" class="mt-2" />
         </div>
         <input type="text" name="nid">
-       
+
         <select name="role" id="">
             <option value="1">Admin</option>
             <option value="2">Vandor</option>
             <option value="3">User</option>
         </select>
-        
-   
+
+
         <!-- Email Address -->
         <div class="mt-4">
             <x-input-label for="email" :value="__('Email')" />
@@ -105,7 +105,7 @@
   </head>
 
   <body>
-    
+
     <div class="d-flex align-items-center justify-content-center bg-br-primary ht-100v">
 
       <div class="login-wrapper wd-300 wd-xs-400 pd-25 pd-xs-40 bg-white rounded shadow-base">
@@ -147,7 +147,7 @@
           <input type="password" class="form-control" name="password_confirmation" placeholder="Enter your Confirm passwrod">
         </div><!-- form-group -->
 
-        
+
        {{-- --------------birthday section------------------------- --}}
 
         {{-- <div class="form-group">
@@ -187,9 +187,9 @@
         </div><!-- form-group --> --}}
 
 
-       
+
         <div class="form-group tx-12">By clicking the Sign Up button below, you agreed to our privacy policy and terms of use of our website.</div>
-        <button type="submit" class="btn btn-info btn-block">Sign Up</button>
+        <button  type="submit"  class="btn btn-info btn-block">Sign Up</button>
     </form>
         <div class="mg-t-40 tx-center">Not yet a member? <a href="{{ route('login') }}" class="tx-info">Login </a></div>
       </div><!-- login-wrapper -->
